@@ -25,7 +25,7 @@ use App\Http\Controllers\DashbordController;
 // });
 
 //Dashboard
-Route::get('/', [DashbordController::class, 'index'])->name('home');
+Route::get('/home', [DashbordController::class, 'index'])->name('home');
 
 //Merek
 Route::get('/merek', [ControllerMerek::class, 'index']);
